@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio Website of Aarav Sharma — 1st-Year B.Tech Computer Science & Engineering student passionate about HTML5, CSS3, UI/UX design, and problem solving.">
+  <title>Aarav Sharma | B.Tech CSE Student &amp; Web Developer Portfolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings), Inter (Body), JetBrains Mono (Code/Tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =========================================================
+       HEADER & NAVIGATION BAR
+       Pure CSS mobile toggle using a hidden checkbox + label
+       ========================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Aarav Sharma Home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-text">Aarav<span class="brand-accent">.dev</span></span>
+      </a>
+
+      <!-- Mobile Menu Toggle (No JavaScript Required) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =========================================================
+         1. HOME / HERO SECTION
+         ========================================================= -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-bg-glow hero-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>1st-Year B.Tech CSE • Open to Projects &amp; Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I&apos;m <span class="gradient-text">Aarav Sharma</span>.<br>
+            Building clean &amp; modern web experiences.
+          </h1>
+
+          <p class="hero-description">
+            I&apos;m a first-year Computer Science &amp; Engineering undergraduate passionate about crafting
+            responsive websites with <strong>HTML5</strong> &amp; <strong>CSS3</strong>, exploring UI/UX design,
+            and strengthening my foundations in C, Python, and Data Structures.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+              <span>View My Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Academic & Project Highlights -->
+          <div class="hero-metrics" aria-label="Quick highlights">
+            <div class="metric-item">
+              <span class="metric-value">1st Year</span>
+              <span class="metric-label">B.Tech CSE (2026–2030)</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-value">4+</span>
+              <span class="metric-label">UI &amp; Web Projects</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-value">120+</span>
+              <span class="metric-label">Coding Problems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Portrait & Floating Badges -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-image-frame">
+              <img
+                src="assets/images/hero-portrait.png"
+                alt="Portrait illustration of Aarav Sharma, B.Tech Computer Science student"
+                class="hero-image"
+                width="520"
+                height="520"
+              >
+            </div>
+
+            <div class="floating-badge badge-top">
+              <i class="fa-brands fa-html5" aria-hidden="true"></i>
+              <div>
+                <strong>HTML5 &amp; CSS3</strong>
+                <span>Semantic &amp; Responsive</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <div>
+                <strong>B.Tech Class of 2030</strong>
+                <span>CGPA 8.9 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. ABOUT ME SECTION
+         ========================================================= -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Curious learner turning ideas into clean interfaces</h2>
+          <p class="section-subtitle">
+            Blending structured problem-solving from my engineering coursework with thoughtful frontend design.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-media">
+            <div class="about-image-wrapper">
+              <img
+                src="assets/images/about-workspace.png"
+                alt="Minimalist college computer science student desk with laptop and wireframe notebook"
+                class="about-image"
+                width="640"
+                height="480"
+              >
+              <div class="experience-pill">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                <span>Freshman Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h3>Hello! I&apos;m a 1st-Year B.Tech Student exploring the web.</h3>
+            <p>
+              My journey into software development began with curiosity about how everyday websites look
+              sharp on both a large monitor and a smartphone screen. In my first year of engineering,
+              I&apos;ve focused on mastering semantic HTML5, modern CSS layout systems like Flexbox and Grid,
+              and clean typography.
+            </p>
+            <p>
+              Beyond web design, I actively practice algorithmic thinking using C and Python, participate
+              in campus hackathons, and document every project on GitHub so I can track my growth from
+              day one.
+            </p>
+
+            <!-- Personal Info Summary Grid -->
+            <div class="about-info-grid">
+              <div class="info-box">
+                <span class="info-label"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i> Degree</span>
+                <span class="info-value">B.Tech CSE (1st Year)</span>
+              </div>
+              <div class="info-box">
+                <span class="info-label"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Location</span>
+                <span class="info-value">Pune, Maharashtra, India</span>
+              </div>
+              <div class="info-box">
+                <span class="info-label"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</span>
+                <a href="mailto:aarav.sharma@example.com" class="info-value info-link">aarav.sharma@example.com</a>
+              </div>
+              <div class="info-box">
+                <span class="info-label"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Focus Area</span>
+                <span class="info-value">Frontend UI &amp; DSA</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                <span>Let&apos;s Collaborate</span>
+              </a>
+              <a href="#education" class="btn btn-outline">
+                <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                <span>Academic Background</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. SKILLS SECTION
+         ========================================================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Skills &amp; Tech Stack</span>
+          <h2 class="section-title">Tools and technologies I build with</h2>
+          <p class="section-subtitle">
+            Core web development fundamentals paired with first-year computer science programming skills.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Frontend Web -->
+          <article class="card skill-card">
+            <div class="card-icon icon-indigo">
+              <i class="fa-solid fa-palette" aria-hidden="true"></i>
+            </div>
+            <h3>Frontend &amp; UI Design</h3>
+            <p class="card-desc">Structuring accessible markup and crafting responsive, modern layouts.</p>
+
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>HTML5 Semantic Markup</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>CSS3, Flexbox &amp; Grid</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Responsive Design</span>
+                  <span>86%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 86%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 2: Programming -->
+          <article class="card skill-card">
+            <div class="card-icon icon-cyan">
+              <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+            </div>
+            <h3>Programming Foundations</h3>
+            <p class="card-desc">Building logical problem-solving habits through academic coursework.</p>
+
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>C Programming</span>
+                  <span>84%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-cyan" style="width: 84%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Python Basics</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-cyan" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>JavaScript (Learning)</span>
+                  <span>65%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-cyan" style="width: 65%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 3: Tools & Workflow -->
+          <article class="card skill-card">
+            <div class="card-icon icon-emerald">
+              <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+            </div>
+            <h3>Tools &amp; Workflow</h3>
+            <p class="card-desc">Using everyday developer tooling to design, inspect, and ship code cleanly.</p>
+
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>VS Code &amp; Live Server</span>
+                  <span>94%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-emerald" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Git &amp; GitHub</span>
+                  <span>78%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-emerald" style="width: 78%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span>Figma &amp; DevTools</span>
+                  <span>76%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-emerald" style="width: 76%;"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Learning Roadmap Tags -->
+        <div class="exploring-bar">
+          <span class="exploring-label">
+            <i class="fa-solid fa-compass" aria-hidden="true"></i> Currently Exploring:
+          </span>
+          <div class="tag-group">
+            <span class="tech-tag">Web Accessibility (a11y)</span>
+            <span class="tech-tag">CSS Keyframe Animations</span>
+            <span class="tech-tag">Data Structures in C</span>
+            <span class="tech-tag">DOM Manipulation</span>
+            <span class="tech-tag">SQL Fundamentals</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. PROJECTS SECTION
+         Includes pure-CSS :target modals for detailed previews
+         ========================================================= -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">Featured college &amp; practice builds</h2>
+          <p class="section-subtitle">
+            Each project focuses on clean visual hierarchy, responsive grid structure, and beginner-friendly code.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img
+                src="assets/images/project-campus.png"
+                alt="Campus Connect student portal web interface mockup"
+                width="640"
+                height="400"
+              >
+              <span class="project-category">Web UI</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Flexbox</span>
+              </div>
+              <h3>Campus Connect Portal</h3>
+              <p>
+                A responsive college dashboard concept organizing daily class timetables, club notices,
+                and assignment deadlines in one distraction-free layout.
+              </p>
+              <div class="project-links">
+                <a href="#modal-campus" class="btn btn-primary btn-sm">
+                  <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                  <span>Project Details</span>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img
+                src="assets/images/project-planner.png"
+                alt="StudyPulse student planner and weather dashboard mockup"
+                width="640"
+                height="400"
+              >
+              <span class="project-category">Productivity</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Card UI</span>
+              </div>
+              <h3>StudyPulse &amp; Weather Hub</h3>
+              <p>
+                A minimalist study-session layout combining exam countdown tiles, subject checklists,
+                and a local weather card designed for student focus.
+              </p>
+              <div class="project-links">
+                <a href="#modal-planner" class="btn btn-primary btn-sm">
+                  <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                  <span>Project Details</span>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img
+                src="assets/images/project-dsa.png"
+                alt="AlgoLens sorting and data structures visualizer interface mockup"
+                width="640"
+                height="400"
+              >
+              <span class="project-category">CS Concept</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Variables</span>
+                <span class="tech-tag">Dark UI</span>
+              </div>
+              <h3>AlgoLens Visualizer UI</h3>
+              <p>
+                A dark-themed algorithm learning interface showcasing sorting bar states, complexity badges,
+                and step-by-step pseudocode panels.
+              </p>
+              <div class="project-links">
+                <a href="#modal-dsa" class="btn btn-primary btn-sm">
+                  <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                  <span>Project Details</span>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img
+                src="assets/images/project-ecotrack.png"
+                alt="EcoTrack campus sustainability tracker web interface mockup"
+                width="640"
+                height="400"
+              >
+              <span class="project-category">Hackathon</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+              <h3>EcoTrack Campus</h3>
+              <p>
+                Prototyped for our college internal hackathon round to help hostels and student clubs
+                visualize recycling milestones and water-saving challenges.
+              </p>
+              <div class="project-links">
+                <a href="#modal-ecotrack" class="btn btn-primary btn-sm">
+                  <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                  <span>Project Details</span>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. EDUCATION SECTION
+         ========================================================= -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic journey &amp; coursework</h2>
+          <p class="section-subtitle">
+            Building a strong engineering foundation in Computer Science and Mathematics.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2026 – 2030 (1st Year)</span>
+                <span class="timeline-badge">CGPA: 8.9 / 10</span>
+              </div>
+              <h3>Bachelor of Technology (B.Tech) — Computer Science &amp; Engineering</h3>
+              <p class="timeline-institution">Pune Institute of Engineering &amp; Technology</p>
+              <p class="timeline-desc">
+                Pursuing core computer science fundamentals with active participation in the Web Development
+                Society and Coding Club.
+              </p>
+              <div class="tag-group">
+                <span class="tech-tag">Web Technologies</span>
+                <span class="tech-tag">Programming in C</span>
+                <span class="tech-tag">Engineering Maths</span>
+                <span class="tech-tag">Digital Logic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2 -->
+          <article class="timeline-item">
+            <div class="timeline-marker marker-cyan" aria-hidden="true">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2024 – 2026</span>
+                <span class="timeline-badge">93.4% Aggregate</span>
+              </div>
+              <h3>Higher Secondary Certificate (Class XII — PCM with Computer Science)</h3>
+              <p class="timeline-institution">Delhi Public School, Pune</p>
+              <p class="timeline-desc">
+                Completed senior secondary education with Computer Science elective, building foundational
+                console applications in Python and SQL.
+              </p>
+              <div class="tag-group">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL Basics</span>
+                <span class="tech-tag">Physics &amp; Mathematics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3 -->
+          <article class="timeline-item">
+            <div class="timeline-marker marker-emerald" aria-hidden="true">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2024</span>
+                <span class="timeline-badge">95.2% Score</span>
+              </div>
+              <h3>Secondary School Examination (Class X)</h3>
+              <p class="timeline-institution">Delhi Public School, Pune</p>
+              <p class="timeline-desc">
+                Awarded Academic Excellence certificate and served as student coordinator for the Annual
+                Science &amp; Tech Exhibition.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. ACHIEVEMENTS SECTION
+         ========================================================= -->
+    <section id="achievements" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Achievements</span>
+          <h2 class="section-title">Milestones, hackathons &amp; certifications</h2>
+          <p class="section-subtitle">
+            Highlights from my first year of engineering, coding practice, and design challenges.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <article class="card achievement-card">
+            <div class="achievement-top">
+              <span class="achievement-icon icon-indigo">
+                <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+              </span>
+              <span class="achievement-year">2026</span>
+            </div>
+            <h3>College Web Design Sprint — Top 5 Finalist</h3>
+            <p>
+              Designed and coded a multi-section responsive college event landing page in 6 hours using
+              pure HTML5 and CSS3 without any external CSS libraries.
+            </p>
+          </article>
+
+          <article class="card achievement-card">
+            <div class="achievement-top">
+              <span class="achievement-icon icon-cyan">
+                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+              </span>
+              <span class="achievement-year">2026</span>
+            </div>
+            <h3>Smart India Hackathon — Internal Round Participant</h3>
+            <p>
+              Collaborated with a 4-member freshman team to wireframe and present EcoTrack Campus,
+              a waste-sorting awareness portal for student hostels.
+            </p>
+          </article>
+
+          <article class="card achievement-card">
+            <div class="achievement-top">
+              <span class="achievement-icon icon-emerald">
+                <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+              </span>
+              <span class="achievement-year">2026</span>
+            </div>
+            <h3>Responsive Web Design Certification</h3>
+            <p>
+              Completed 300+ hours of hands-on coursework covering semantic HTML5 accessibility, CSS Grid,
+              Flexbox layouts, and mobile-first media queries.
+            </p>
+          </article>
+
+          <article class="card achievement-card">
+            <div class="achievement-top">
+              <span class="achievement-icon icon-amber">
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+              </span>
+              <span class="achievement-year">Ongoing</span>
+            </div>
+            <h3>120+ Coding &amp; Logic Problems Solved</h3>
+            <p>
+              Consistently solving beginner-to-intermediate programming challenges in C and Python
+              focusing on loops, arrays, strings, and recursion.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. CONTACT SECTION
+         ========================================================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let&apos;s connect &amp; build together</h2>
+          <p class="section-subtitle">
+            Have a college project idea, internship opportunity, or feedback on my portfolio? Drop a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Direct Info & Socials -->
+          <aside class="card contact-info-card">
+            <h3>Get in Touch</h3>
+            <p>
+              I&apos;m always excited to collaborate with fellow students, join hackathon teams,
+              and learn from experienced developers.
+            </p>
+
+            <div class="contact-details">
+              <a href="mailto:aarav.sharma@example.com" class="contact-row">
+                <span class="contact-row-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                <div>
+                  <span class="contact-row-label">Email Me</span>
+                  <span class="contact-row-value">aarav.sharma@example.com</span>
+                </div>
+              </a>
+
+              <div class="contact-row">
+                <span class="contact-row-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                <div>
+                  <span class="contact-row-label">Campus Location</span>
+                  <span class="contact-row-value">Pune, Maharashtra, India</span>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-row-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
+                <div>
+                  <span class="contact-row-label">Availability</span>
+                  <span class="contact-row-value">Weekends &amp; Evenings (IST)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-block">
+              <span class="social-heading">Find me online</span>
+              <div class="social-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="CodePen">
+                  <i class="fa-brands fa-codepen" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:aarav.sharma@example.com" class="social-btn" aria-label="Send Email">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Right Column: Semantic HTML5 Form -->
+          <div class="card contact-form-card">
+            <form class="contact-form" action="mailto:aarav.sharma@example.com" method="post" enctype="text/plain">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="name"
+                    placeholder="e.g., Priya Verma"
+                    required
+                    autocomplete="name"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="email-address">Email Address</label>
+                  <input
+                    type="email"
+                    id="email-address"
+                    name="email"
+                    placeholder="e.g., priya@example.com"
+                    required
+                    autocomplete="email"
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Hackathon collaboration / Feedback"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       8. FOOTER SECTION
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span class="brand-text">Aarav<span class="brand-accent">.dev</span></span>
+          </a>
+          <p>
+            1st-Year B.Tech CSE Student crafting clean, accessible, and responsive websites with HTML5 &amp; CSS3.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-btn social-btn-dark" aria-label="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-btn social-btn-dark" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer" class="social-btn social-btn-dark" aria-label="CodePen">
+              <i class="fa-brands fa-codepen" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:aarav.sharma@example.com" class="social-btn social-btn-dark" aria-label="Email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+          <a href="#home" class="back-to-top">
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+            <span>Back to Top</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aarav Sharma. Built with pure HTML5 &amp; CSS3 for B.Tech Web Development Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       PURE-CSS PROJECT DETAIL MODALS (:target)
+       Opens when clicking "Project Details" without needing JS
+       ========================================================= -->
+  <div id="modal-campus" class="project-modal" role="dialog" aria-labelledby="modal-campus-title">
+    <a href="#projects" class="modal-backdrop" aria-label="Close modal"></a>
+    <div class="modal-box">
+      <a href="#projects" class="modal-close" aria-label="Close project details">&times;</a>
+      <img src="assets/images/project-campus.png" alt="Campus Connect Portal preview" class="modal-img">
+      <h3 id="modal-campus-title">Campus Connect Portal</h3>
+      <p>
+        Designed to unify scattered college WhatsApp notices and PDF timetables into a clean,
+        scannable dashboard interface using CSS Grid areas and mobile-first cards.
+      </p>
+      <ul class="modal-highlights">
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Responsive 3-column dashboard that stacks cleanly on mobile</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Color-coded subject badges and announcement priority pills</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Built strictly with semantic HTML5 &amp; CSS3 custom properties</li>
+      </ul>
+      <div class="modal-actions">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Repository</a>
+        <a href="#projects" class="btn btn-outline btn-sm">Close Preview</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-planner" class="project-modal" role="dialog" aria-labelledby="modal-planner-title">
+    <a href="#projects" class="modal-backdrop" aria-label="Close modal"></a>
+    <div class="modal-box">
+      <a href="#projects" class="modal-close" aria-label="Close project details">&times;</a>
+      <img src="assets/images/project-planner.png" alt="StudyPulse and Weather Hub preview" class="modal-img">
+      <h3 id="modal-planner-title">StudyPulse &amp; Weather Hub</h3>
+      <p>
+        A calm, high-contrast study planner interface created to help 1st-year engineering students
+        track weekly lab submissions alongside daily weather and focus intervals.
+      </p>
+      <ul class="modal-highlights">
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Modular card hierarchy with subtle hover elevation</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Pure CSS progress indicators and crisp Google Fonts typography</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Zero-scroll mobile layout with accessible focus rings</li>
+      </ul>
+      <div class="modal-actions">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Repository</a>
+        <a href="#projects" class="btn btn-outline btn-sm">Close Preview</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-dsa" class="project-modal" role="dialog" aria-labelledby="modal-dsa-title">
+    <a href="#projects" class="modal-backdrop" aria-label="Close modal"></a>
+    <div class="modal-box">
+      <a href="#projects" class="modal-close" aria-label="Close project details">&times;</a>
+      <img src="assets/images/project-dsa.png" alt="AlgoLens Visualizer UI preview" class="modal-img">
+      <h3 id="modal-dsa-title">AlgoLens Visualizer UI</h3>
+      <p>
+        An educational UI prototype built while learning sorting algorithms in C, featuring dark-mode
+        contrast, array bar visual states, and time-complexity comparison cards.
+      </p>
+      <ul class="modal-highlights">
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Monospace JetBrains Mono code &amp; complexity badges</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Clean control toolbar layout using Flexbox spacing</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> High-contrast dark slate palette for comfortable reading</li>
+      </ul>
+      <div class="modal-actions">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Repository</a>
+        <a href="#projects" class="btn btn-outline btn-sm">Close Preview</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ecotrack" class="project-modal" role="dialog" aria-labelledby="modal-ecotrack-title">
+    <a href="#projects" class="modal-backdrop" aria-label="Close modal"></a>
+    <div class="modal-box">
+      <a href="#projects" class="modal-close" aria-label="Close project details">&times;</a>
+      <img src="assets/images/project-ecotrack.png" alt="EcoTrack Campus preview" class="modal-img">
+      <h3 id="modal-ecotrack-title">EcoTrack Campus</h3>
+      <p>
+        Our team&apos;s freshman hackathon frontend prototype focused on encouraging hostel recycling
+        competitions and tracking campus green initiatives visually.
+      </p>
+      <ul class="modal-highlights">
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Emerald &amp; mint visual theme tailored for sustainability</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Leaderboard cards and weekly eco-challenge milestones</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Built for fast presentation across laptops and phones</li>
+      </ul>
+      <div class="modal-actions">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Repository</a>
+        <a href="#projects" class="btn btn-outline btn-sm">Close Preview</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
